@@ -7,7 +7,7 @@ spring:
     config:
       label: master
       server:
-        default-application-name: config-server
+        default-application-name: ms-configServer
         git:
          uri: https://github.com/ChenRunPing/ms-configServer
          search-paths: ms-congfigServer
