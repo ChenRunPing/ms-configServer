@@ -10,5 +10,5 @@ spring:
         default-application-name: ms-configServer
         git:
          uri: https://github.com/ChenRunPing/ms-configServer
-         search-paths: ms-congfigServer
+         search-paths: configPath
 
