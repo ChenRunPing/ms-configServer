@@ -5,10 +5,10 @@ server:
 spring:
   cloud:
     config:
+      label: master
       server:
         default-application-name: config-server
-        default-label: master
         git:
-         uri: https://github.com/ChenRunPing
+         uri: https://github.com/ChenRunPing/ms-configServer
          search-paths: ms-congfigServer
 
