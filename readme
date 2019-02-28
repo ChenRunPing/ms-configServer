@@ -1,0 +1,21 @@
+1、本项目仅仅用于学习测试使用
+
+2、本项目基于spring boot 2.1.0版本的spring cloud config的server
+
+3、搭建本项目时注意配置文件每个属性的作用
+
+spring:
+  cloud:
+    config:
+      #分支
+      label: master
+      server:
+        #项目应用名称
+        default-application-name: ms-configServer
+        git:
+         #配置文件的所在git仓库地址
+         uri: https://github.com/ChenRunPing/ms-configServer
+         #配置文件所在文件夹目录
+         search-paths: configPath
+
+4、存放其他组件项目的配置文件不一定和config server项目放在一起，但是为了便于修改配置文件后重新启动server 建议放在一起。
